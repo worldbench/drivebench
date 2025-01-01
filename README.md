@@ -2,8 +2,10 @@
 
 
 <p align="center">
-
-  <h3 align="center">  <img src="docs/figs/human.png" align="center" width="5%"> <strong>Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives</strong></h3>
+  <h3 align="center">  
+    <img src="docs/figs/icons/human.png" align="center" width="4%">
+    <strong>Are VLMs Ready for Autonomous Driving?<br>An Empirical Study from the Reliability, Data, and Metric Perspectives</strong>
+  </h3>
 
   <p align="center">
       <a href="https://daniel-xsy.github.io/" target='_blank'>Shaoyuan Xie</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
