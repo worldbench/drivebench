@@ -3,7 +3,7 @@
 
 <p align="center">
   <h3 align="center">  
-    <img src="docs/figs/icons/human.png" align="center" width="4%">
+    <img src="docs/figs/icons/human.png" align="center" width="5%">
     <strong>Are VLMs Ready for Autonomous Driving?<br>An Empirical Study from the Reliability, Data, and Metric Perspectives</strong>
   </h3>
 
@@ -16,7 +16,7 @@
       <a href="https://scholar.google.com/citations?user=lcsu7m8AAAAJJ&hl=en" target='_blank'>Qi Alfred Chen</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
       <a href="https://liuziwei7.github.io/" target='_blank'>Ziwei Liu</a><sup>4</sup>&nbsp;&nbsp;&nbsp;
       <a href="https://scholar.google.com/citations?user=lSDISOcAAAAJJ&hl=en" target='_blank'>Liang Pan</a><sup>2</sup>
-    </br>
+    </br></br>
   <sup>1</sup>University of California, Irvine&nbsp;&nbsp;&nbsp;
   <sup>2</sup>Shanghai AI Laboratory&nbsp;&nbsp;&nbsp;
   <sup>3</sup>National University of Singapore&nbsp;&nbsp;&nbsp;
