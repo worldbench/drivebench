@@ -26,7 +26,7 @@
 </p>
 
 <p align="center">
-  <a href="" target='_blank'>
+  <a href="https://arxiv.org/abs/2501.04003" target='_blank'>
     <img src="https://img.shields.io/badge/Paper-%F0%9F%93%83-lightblue">
   </a>&nbsp;
   <a href="https://drive-bench.github.io/" target='_blank'>
@@ -54,7 +54,7 @@
 
 ## :memo: Updates
 - \[2025.01\] - The evaluation data can be accessible at our [HuggingFace Dataset Card](https://huggingface.co/datasets/drive-bench/arena). :hugs:
-- \[2025.01\] - Introducing the :blue_car: **DriveBench** project! For more details, kindly refer to our [Project Page](https://drive-bench.github.io/) and [Preprint](). :rocket:
+- \[2025.01\] - Introducing the :blue_car: **DriveBench** project! For more details, kindly refer to our [Project Page](https://drive-bench.github.io/) and [Preprint](https://arxiv.org/abs/2501.04003). :rocket:
 
 
 # Table of Content
@@ -848,7 +848,7 @@ If you find this work helpful, please kindly consider citing our paper:
 @article{xie2025drivebench,
   author  = {Xie, Shaoyuan and Kong, Lingdong and Dong, Yuhao and Sima, Chonghao and Zhang, Wenwei and Chen, Qi Alfred and Liu, Ziwei and Pan, Liang},
   title   = {Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives},
-  journal = {arXiv preprint arXiv:2501.},
+  journal = {arXiv preprint arXiv:2501.04003},
   year    = {2025},
 }
 ```
