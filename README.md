@@ -53,8 +53,8 @@
 
 
 ## :memo: Updates
-- \[2025.01\] The evaluation data can be accessible at our [HuggingFace Dataset Card](https://huggingface.co/datasets/drive-bench/arena). :hugs:
-- \[2025.01\] Introducing the :blue_car: **DriveBench** project! For more details, kindly refer to our [Project Page](https://drive-bench.github.io/) and [Preprint](). :rocket:
+- \[2025.01\] - The evaluation data can be accessible at our [HuggingFace Dataset Card](https://huggingface.co/datasets/drive-bench/arena). :hugs:
+- \[2025.01\] - Introducing the :blue_car: **DriveBench** project! For more details, kindly refer to our [Project Page](https://drive-bench.github.io/) and [Preprint](). :rocket:
 
 
 # Table of Content
@@ -68,7 +68,7 @@
   - [Robustness Analysis](#robustness-analysis)
 - [Citation](#citation)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
+- [Acknowledgments](#acknowledgments)
 
 
 # :bar_chart: Benchmark Comparison
@@ -831,7 +831,6 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](./docs
 
 
 
-
 # Citation
 If you find this work helpful, please kindly consider citing our paper:
 ```bibtex
@@ -849,7 +848,7 @@ If you find this work helpful, please kindly consider citing our paper:
 This work is under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), while some specific implementations in this codebase might be with other licenses. Kindly refer to [LICENSE.md]() for a more careful check, if you are using our code for commercial matters.
 
 
-# Acknowledgements
+# Acknowledgments
 
 To be updated.
 
