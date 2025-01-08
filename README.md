@@ -1,4 +1,4 @@
-<p align="right">English | <a href="./README_CN.md">简体中文</a></p>  
+<p align="right">English | <a >简体中文</a></p>  
 
 
 <p align="center">
@@ -60,22 +60,20 @@
 
 
 # Table of Content
-- [Installation](#gear-installation)
 - [Benchmark Comparison](#bar_chart-benchmark-comparison)
+- [Installation](#gear-installation)
 - [Data Preparation](#hotsprings-data-preparation)
 - [Getting Started](#rocket-getting-started)
 - [Benchmark Results](#aerial_tramway-benchmark-results)
+  - [Benchmark Configuration](#benchmark-configuration)
+  - [Benchmark Study](#benchmark-study)
+  - [Robustness Analysis](#robustness-analysis)
 - [Citation](#citation)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 
-## :gear: Installation
-
-For details related to installation and environment setups, kindly refer to [INSTALL.md](./docs/INSTALL.md).
-
-
-## :bar_chart: Benchmark Comparison
+# :bar_chart: Benchmark Comparison
 
 <table>
 <thead>
@@ -236,28 +234,54 @@ For details related to installation and environment setups, kindly refer to [INS
 </table>
 
 
-## :hotsprings: Data Preparation
+
+# :gear: Installation
+
+For details related to installation and environment setups, kindly refer to [INSTALL.md](./docs/INSTALL.md).
+
+
+
+# :hotsprings: Data Preparation
 
 Kindly refer to [DATA_PREPAER.md](./docs/DATA_PREPAER.md) for the details to prepare the datasets.
 
 
 
-## :rocket: Getting Started
+# :rocket: Getting Started
 
 To learn more usage about this codebase, kindly refer to [GET_STARTED.md](./docs/GET_STARTED.md).
 
 
 
-## :aerial_tramway: Benchmark Results
+# :aerial_tramway: Benchmark Results
 
 ### Benchmark Configuration
 
 <details open>
-<summary>&nbsp<b>Vision-Language Model (VLMs)</b></summary>
-
+<summary>&nbsp<b>Commercial VLMs</b></summary>
+  
 > - [x] **[GPT4-o]()**
-> - [x] **[LLaVA-1.5]()** <sup>[**`[Code]`**](https://github.com/xuanyuzhou98/SqueezeSegV2)</sup>
-> - [x] **[LLaVA-NeXT]().** <sup>[**`[Code]`**](https://github.com/NVIDIA/MinkowskiEngine)</sup>
+
+</details>
+
+<details open>
+<summary>&nbsp<b>Open-Source VLMs</b></summary>
+  
+> - [x] **[LLaVA-1.5]()** <sup>[**`[Code]`**]()</sup>
+> - [x] **[LLaVA-NeXT]()** <sup>[**`[Code]`**]()</sup>
+> - [x] **[InternVL2]()** <sup>[**`[Code]`**]()</sup>
+> - [x] **[Phi-3]()** <sup>[**`[Code]`**]()</sup>
+> - [x] **[Phi-3.5]()** <sup>[**`[Code]`**]()</sup>
+> - [x] **[Oryx]()** <sup>[**`[Code]`**]()</sup>
+> - [x] **[Qwen2-VL]()** <sup>[**`[Code]`**]()</sup>
+
+</details>
+
+<details open>
+<summary>&nbsp<b>Specialist VLMs</b></summary>
+  
+> - [x] **[DriveLM-Agent]()** <sup>[**`[Code]`**]()</sup>
+> - [x] **[Dolphins]()** <sup>[**`[Code]`**]()</sup>
 
 </details>
 
@@ -522,8 +546,295 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](./docs
 </table>
           
 
+### Robustness Analysis
+<table>
+<thead>
+<tr>
+<th rowspan="2">Model</th>
+<th rowspan="2">Size</th>
+<th rowspan="2">Type</th>
+<th colspan="3"><img src="./docs/figs/icons/weather.png" style="width: 45px; height: 45px; vertical-align: top;"><span><br/></span>Weather</th>
+<th colspan="3"><img src="./docs/figs/icons/external.png" style="width: 45px; height: 45px; vertical-align: top;"><span><br/>External</th>
+<th colspan="3"><img src="./docs/figs/icons/sensor.png" style="width: 45px; height: 45px; vertical-align: top;"><span><br/>Sensor</th>
+<th colspan="3"><img src="./docs/figs/icons/motion.png" style="width: 45px; height: 45px; vertical-align: top;"><span><br/>Motion</th>
+<th colspan="3"><img src="./docs/figs/icons/transmission.png" style="width: 45px; height: 45px; vertical-align: top;"><span><br/>Transmission</th>
+</tr>
+<tr>
+<th><span style="color: rgb(66, 133, 244);">MCQ</span></th>
+<th><span style="color: rgb(192, 0, 0);">VQA</span></th>
+<th><span style="color: rgb(0, 176, 80);">CAP</span></th>
+<th><span style="color: rgb(66, 133, 244);">MCQ</span></th>
+<th><span style="color: rgb(192, 0, 0);">VQA</span></th>
+<th><span style="color: rgb(0, 176, 80);">CAP</span></th>
+<th><span style="color: rgb(66, 133, 244);">MCQ</span></th>
+<th><span style="color: rgb(192, 0, 0);">VQA</span></th>
+<th><span style="color: rgb(0, 176, 80);">CAP</span></th>
+<th><span style="color: rgb(66, 133, 244);">MCQ</span></th>
+<th><span style="color: rgb(192, 0, 0);">VQA</span></th>
+<th><span style="color: rgb(0, 176, 80);">CAP</span></th>
+<th><span style="color: rgb(66, 133, 244);">MCQ</span></th>
+<th><span style="color: rgb(192, 0, 0);">VQA</span></th>
+<th><span style="color: rgb(0, 176, 80);">CAP</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td><a>GPT-4o</a></td>
+<td>-</td>
+<td>Commercial</td>
+<td>57.20</td>
+<td>57.28</td>
+<td>54.90</td>
+<td>29.25</td>
+<td>56.60</td>
+<td>61.98</td>
+<td>44.25</td>
+<td>54.95</td>
+<td>56.53</td>
+<td>34.25</td>
+<td>59.20</td>
+<td>56.25</td>
+<td>36.83</td>
+<td>53.95</td>
+<td>57.57</td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td><a>LLaVA-1.5</a></td>
+<td>7B</td>
+<td>Open</td>
+<td>69.70</td>
+<td>35.49</td>
+<td>35.91</td>
+<td>26.50</td>
+<td>29.17</td>
+<td>34.95</td>
+<td>18.83</td>
+<td>30.64</td>
+<td>33.15</td>
+<td>71.25</td>
+<td>33.43</td>
+<td>35.18</td>
+<td>10.17</td>
+<td>27.28</td>
+<td>34.38</td>
+</tr>
+<tr>
+<td><a>LLaVA-1.5</a></td>
+<td>13B</td>
+<td>Open</td>
+<td>61.60</td>
+<td>39.76</td>
+<td>37.76</td>
+<td>15.50</td>
+<td>34.55</td>
+<td>37.83</td>
+<td>24.08</td>
+<td>35.48</td>
+<td>36.08</td>
+<td>79.75</td>
+<td>36.46</td>
+<td>36.42</td>
+<td>15.50</td>
+<td>32.53</td>
+<td>34.33</td>
+</tr>
+<tr>
+<td><a>LLaVA-NeXT</a></td>
+<td>7B</td>
+<td>Open</td>
+<td>69.70</td>
+<td>36.96</td>
+<td>48.52</td>
+<td>48.50</td>
+<td>30.32</td>
+<td>57.18</td>
+<td>21.83</td>
+<td>30.40</td>
+<td>44.37</td>
+<td>66.00</td>
+<td>34.20</td>
+<td>50.44</td>
+<td>11.83</td>
+<td>29.43</td>
+<td>53.50</td>
+</tr>
+<tr>
+<td><a>InternVL2</a></td>
+<td>8B</td>
+<td>Open</td>
+<td>59.90</td>
+<td>48.72</td>
+<td>48.60</td>
+<td>50.75</td>
+<td>47.74</td>
+<td>57.82</td>
+<td>29.92</td>
+<td>45.06</td>
+<td>51.14</td>
+<td>68.25</td>
+<td>49.51</td>
+<td>49.67</td>
+<td>30.00</td>
+<td>43.42</td>
+<td>54.24</td>
+</tr>
+<tr>
+<td><a>Phi-3</a></td>
+<td>4.2B</td>
+<td>Open</td>
+<td>40.00</td>
+<td>40.59</td>
+<td>45.61</td>
+<td>25.00</td>
+<td>31.44</td>
+<td>45.99</td>
+<td>16.83</td>
+<td>35.58</td>
+<td>43.71</td>
+<td>31.25</td>
+<td>42.92</td>
+<td>48.43</td>
+<td>27.67</td>
+<td>33.04</td>
+<td>41.35</td>
+</tr>
+<tr>
+<td><a>Phi-3.5</a></td>
+<td>4.2B</td>
+<td>Open</td>
+<td>60.60</td>
+<td>41.82</td>
+<td>45.97</td>
+<td>21.25</td>
+<td>36.89</td>
+<td>30.95</td>
+<td>25.58</td>
+<td>34.66</td>
+<td>39.30</td>
+<td>33.00</td>
+<td>46.03</td>
+<td>49.33</td>
+<td>39.67</td>
+<td>33.47</td>
+<td>39.67</td>
+</tr>
+<tr>
+<td><a>Oryx</a></td>
+<td>7B</td>
+<td>Open</td>
+<td>53.20</td>
+<td>40.43</td>
+<td>48.95</td>
+<td>45.00</td>
+<td>40.68</td>
+<td>56.06</td>
+<td>50.50</td>
+<td>36.71</td>
+<td>48.55</td>
+<td>72.50</td>
+<td>40.01</td>
+<td>48.33</td>
+<td>39.67</td>
+<td>36.98</td>
+<td>49.87</td>
+</tr>
+<tr>
+<td><a>Qwen2-VL</a></td>
+<td>7B</td>
+<td>Open</td>
+<td>76.70</td>
+<td>49.33</td>
+<td>45.12</td>
+<td>37.50</td>
+<td>47.62</td>
+<td>51.24</td>
+<td>22.83</td>
+<td>39.45</td>
+<td>47.23</td>
+<td>57.00</td>
+<td>47.40</td>
+<td>47.74</td>
+<td>35.83</td>
+<td>42.31</td>
+<td>48.60</td>
+</tr>
+<tr>
+<td><a>Qwen2-VL</a></td>
+<td>72B</td>
+<td>Open</td>
+<td>59.80</td>
+<td>51.05</td>
+<td>48.55</td>
+<td>45.50</td>
+<td>50.57</td>
+<td>57.25</td>
+<td>52.25</td>
+<td>45.89</td>
+<td>48.59</td>
+<td>58.25</td>
+<td>50.85</td>
+<td>47.88</td>
+<td>44.83</td>
+<td>46.23</td>
+<td>50.50</td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td><a>DriveLM</a></td>
+<td>7B</td>
+<td>Specialist</td>
+<td>21.20</td>
+<td>42.86</td>
+<td>20.04</td>
+<td>21.25</td>
+<td>37.49</td>
+<td>21.92</td>
+<td>9.00</td>
+<td>36.68</td>
+<td>15.56</td>
+<td>22.25</td>
+<td>42.05</td>
+<td>17.07</td>
+<td>17.50</td>
+<td>39.56</td>
+<td>10.37</td>
+</tr>
+<tr>
+<td><a>Dolphins</a></td>
+<td>7B</td>
+<td>Specialist</td>
+<td>54.30</td>
+<td>30.21</td>
+<td>31.08</td>
+<td>3.00</td>
+<td>30.42</td>
+<td>29.38</td>
+<td>9.42</td>
+<td>26.83</td>
+<td>26.30</td>
+<td>9.25</td>
+<td>29.82</td>
+<td>28.05</td>
+<td>21.50</td>
+<td>28.86</td>
+<td>27.65</td>
+</tr>
+</tbody>
+</table>
 
-## Citation
+
+
+
+
+# Citation
 If you find this work helpful, please kindly consider citing our paper:
 ```bibtex
 @article{xie2025drivebench,
@@ -535,12 +846,12 @@ If you find this work helpful, please kindly consider citing our paper:
 ```
 
 
-## License
+# License
 
 This work is under the [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), while some specific implementations in this codebase might be with other licenses. Kindly refer to [LICENSE.md]() for a more careful check, if you are using our code for commercial matters.
 
 
-## Acknowledgements
+# Acknowledgements
 
 To be updated.
 
