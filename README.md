@@ -72,200 +72,455 @@
 
 ## :gear: Installation
 
-Will be updated soon.
+For details related to installation and environment setups, kindly refer to [INSTALL.md](./docs/INSTALL.md).
 
 
 ## :bar_chart: Benchmark Comparison
 
 <table>
 <thead>
-  <tr>
-    <th rowspan="2">Benchmark</th>
-    <th rowspan="2"><img src="./docs/figs/icons/perception.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Perception</span></th>
-    <th rowspan="2"><img src="./docs/figs/icons/prediction.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Prediction</span></th>
-    <th rowspan="2"><img src="./docs/figs/icons/behavior.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Behavior</span></th>
-    <th rowspan="2"><img src="./docs/figs/icons/planning.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Planning</span></th>
-    <th rowspan="2"><img src="./docs/figs/icons/robustness.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Robustness</span></th>
-    <th>Frames</th>
-    <th>QA</th>
-    <th rowspan="2">Logic</th>
-    <th rowspan="2">Evaluation Metrics</th>
-  </tr>
-  <tr>
-    <th>(Test)</th>
-    <th>(Test)</th>
-  </tr>
+<tr>
+<th rowspan="2">Benchmark</th>
+<th rowspan="2"><img src="./docs/figs/icons/perception.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Perception</span></th>
+<th rowspan="2"><img src="./docs/figs/icons/prediction.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Prediction</span></th>
+<th rowspan="2"><img src="./docs/figs/icons/behavior.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Behavior</span></th>
+<th rowspan="2"><img src="./docs/figs/icons/planning.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Planning</span></th>
+<th rowspan="2"><img src="./docs/figs/icons/robustness.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Robustness</span></th>
+<th>Frames</th>
+<th>QA</th>
+<th rowspan="2">Logic</th>
+<th rowspan="2">Evaluation Metrics</th>
+</tr>
+<tr>
+<th>(Test)</th>
+<th>(Test)</th>
+</tr>
 </thead>
 <tbody>
-  <tr>
-    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  </tr>
-  <tr>
-    <td>BDD-X</td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td>-</td>
-    <td>-</td>
-    <td>None</td>
-    <td>Language</td>
-  </tr>
-  <tr>
-    <td>BDD-OIA</td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td>-</td>
-    <td>-</td>
-    <td>None</td>
-    <td>F1 Score</td>
-  </tr>
-  <tr>
-    <td>nuScenes-QA</td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td>36,114</td>
-    <td>83,337</td>
-    <td>None</td>
-    <td>Acc</td>
-  </tr>
-  <tr>
-    <td>Talk2Car</td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td>~1.8k</td>
-    <td>2,447</td>
-    <td>None</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>nuPrompt</td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td>~36k</td>
-    <td>~6k</td>
-    <td>None</td>
-    <td>AMOTA</td>
-  </tr>
-  <tr>
-    <td>DRAMA</td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td>-</td>
-    <td>~14k</td>
-    <td>Chain</td>
-    <td>Language</td>
-  </tr>
-  <tr>
-    <td>Rank2Tel</td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td>-</td>
-    <td>-</td>
-    <td>Chain</td>
-    <td>Accuracy, Language</td>
-  </tr>
-  <tr>
-    <td>DirveMLLM</td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td>880</td>
-    <td>-</td>
-    <td>None</td>
-    <td>Acc</td>
-  </tr>
-  <tr>
-    <td>DriveVLM</td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td>-</td>
-    <td>-</td>
-    <td>None</td>
-    <td>GPT<sub>ctx</sub></td>
-  </tr>
-  <tr>
-    <td>DriveLM</td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
-    <td>4,794</td>
-    <td>15,480</td>
-    <td>Graph</td>
-    <td>Language, GPT</td>
-  </tr>
-  <tr>
-    <td><strong><span style="font-family: 'Nunito', sans-serif; color: rgb(66, 133, 244);">Drive</span><span style="font-family: 'Nunito', sans-serif; color: rgb(192, 0, 0);">Bench</span> (Ours)</strong></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
-    <td><b>19,200</b></td>
-    <td><b>20,498</b></td>
-    <td><b>Graph</b></td>
-    <td><b>Acc, Language, GPT, GPT<sub>ctx</sub></b></td>
-  </tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>BDD-X</td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td>-</td>
+<td>-</td>
+<td>None</td>
+<td>Language</td>
+</tr>
+<tr>
+<td>BDD-OIA</td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td>-</td>
+<td>-</td>
+<td>None</td>
+<td>F1 Score</td>
+</tr>
+<tr>
+<td>nuScenes-QA</td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td>36,114</td>
+<td>83,337</td>
+<td>None</td>
+<td>Acc</td>
+</tr>
+<tr>
+<td>Talk2Car</td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td>~1.8k</td>
+<td>2,447</td>
+<td>None</td>
+<td>-</td>
+</tr>
+<tr>
+<td>nuPrompt</td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td>~36k</td>
+<td>~6k</td>
+<td>None</td>
+<td>AMOTA</td>
+</tr>
+<tr>
+<td>DRAMA</td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td>-</td>
+<td>~14k</td>
+<td>Chain</td>
+<td>Language</td>
+</tr>
+<tr>
+<td>Rank2Tel</td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td>-</td>
+<td>-</td>
+<td>Chain</td>
+<td>Accuracy, Language</td>
+</tr>
+<tr>
+<td>DirveMLLM</td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td>880</td>
+<td>-</td>
+<td>None</td>
+<td>Acc</td>
+</tr>
+<tr>
+<td>DriveVLM</td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td>-</td>
+<td>-</td>
+<td>None</td>
+<td>GPT<sub>ctx</sub></td>
+</tr>
+<tr>
+<td>DriveLM</td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(192, 0, 0);">✘</span></td>
+<td>4,794</td>
+<td>15,480</td>
+<td>Graph</td>
+<td>Language, GPT</td>
+</tr>
+<tr>
+<td><strong><span style="font-family: 'Nunito', sans-serif; color: rgb(66, 133, 244);">Drive</span><span style="font-family: 'Nunito', sans-serif; color: rgb(192, 0, 0);">Bench</span> (Ours)</strong></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><span style="color: rgb(0, 176, 80);">✔</span></td>
+<td><b>19,200</b></td>
+<td><b>20,498</b></td>
+<td><b>Graph</b></td>
+<td><b>Acc, Language, GPT, GPT<sub>ctx</sub></b></td>
+</tr>
 </tbody>     
 </table>
 
 
 ## :hotsprings: Data Preparation
 
-Will be updated soon.
+Kindly refer to [DATA_PREPAER.md](./docs/DATA_PREPAER.md) for the details to prepare the datasets.
+
 
 
 ## :rocket: Getting Started
 
-Will be updated soon.
+To learn more usage about this codebase, kindly refer to [GET_STARTED.md](./docs/GET_STARTED.md).
+
 
 
 ## :aerial_tramway: Benchmark Results
 
-### 
+### Benchmark Configuration
 
-| **Model**                          | **Size**       | **Type**       | **Perception (Clean)** | **Perception (Corr.)** | **Perception (T.O.)** | **Prediction (Clean)** | **Prediction (Corr.)** | **Prediction (T.O.)** | **Planning (Clean)** | **Planning (Corr.)** | **Planning (T.O.)** | **Behavior (Clean)** | **Behavior (Corr.)** | **Behavior (T.O.)** |
-|:-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Human                               | -              | -              | 47.67                  | 38.32                  | -                      | -                      | -                      | -                      | -                     | -                     | -                     | 69.51                | 54.09                | -                     |
-| GPT-4o                              | -              | Commercial     | 35.37                  | 35.25                  | 36.48                  | 51.30                  | 49.94                  | 49.05                  | 75.75                | 75.36                | 73.21                | 45.40                | 44.33                | 50.03                |
-| LLaVA-1.5 | 7B | Open           | 23.22                  | 22.95                  | 22.31                  | 22.02                  | 17.54                  | 14.64                  | 29.15                | 31.51                | 32.45                | 13.60                | 13.62                | 14.91                |
-| LLaVA-1.5 | 13B | Open           | 23.35                  | 23.37                  | 22.37                  | 36.98                  | 37.78                  | 23.98                  | 34.26                | 34.99                | 38.85                | 32.99                | 32.43                | 32.79                |
-| LLaVA-NeXT | 7B | Open           | 24.15                  | 19.62                  | 13.86                  | 35.07                  | 35.89                  | 28.36                  | 45.27                | 44.36                | 27.58                | 48.16                | 39.44                | 11.92                |
-| InternVL2 | 8B      | Open           | 32.36                  | 32.68                  | 33.60                  | 45.52                  | 37.93                  | 48.89                  | 53.27                | 55.25                | 34.56                | 54.58                | 40.78                | 20.14                |
-| Phi-3                               | 4.2B    | Open           | 22.88                  | 23.93                  | 28.26                  | 40.11                  | 37.27                  | 22.61                  | 60.03                | 61.31                | 46.88                | 45.20                | 44.57                | 28.22                |
-| Phi-3.5                             | 4.2B    | Open           | 27.52                  | 27.51                  | 28.26                  | 45.13                  | 38.21                  | 4.92                   | 31.91                | 28.36                | 46.30                | 37.89                | 49.13                | 39.16                |
-| Oryx                                | 7B      | Open           | 17.02                  | 15.97                  | 18.47                  | 48.13                  | 46.63                  | 12.77                  | 53.57                | 55.76                | 48.26                | 33.92                | 33.81                | 23.94                |
-| Qwen2-VL | 7B | Open           | 28.99                  | 27.85                  | 35.16                  | 37.89                  | 39.55                  | 37.77                  | 57.04                | 54.78                | 41.66                | 49.07                | 47.68                | 54.48                |
-| Qwen2-VL | 72B | Open           | 30.13                  | 26.92                  | 17.70                  | 49.35                  | 43.49                  | 5.57                   | 61.30                | 63.07                | 53.35                | 51.26                | 49.78                | 39.46                |
-| DriveLM                             | 7B      | Specialist     | 16.85                  | 16.00                  | 8.75                   | 44.33                  | 39.71                  | 4.70                   | 68.71                | 67.60                | 65.24                | 42.78                | 40.37                | 27.83                |
-| Dolphins                            | 7B      | Specialist     | 9.59                   | 10.84                  | 11.01                  | 32.66                  | 29.88                  | 39.98                  | 52.91                | 53.77                | 60.98                | 8.81                 | 8.25                 | 11.92                |
+<details open>
+<summary>&nbsp<b>Vision-Language Model (VLMs)</b></summary>
 
+> - [x] **[GPT4-o]()**
+> - [x] **[LLaVA-1.5]()** <sup>[**`[Code]`**](https://github.com/xuanyuzhou98/SqueezeSegV2)</sup>
+> - [x] **[LLaVA-NeXT]().** <sup>[**`[Code]`**](https://github.com/NVIDIA/MinkowskiEngine)</sup>
+
+</details>
+
+
+### Benchmark Study
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Type</th>
+<th><img src="./docs/figs/icons/perception.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Perception</span> (<span style="color: rgb(0, 176, 80);">Clean</span>)</th>
+<th><img src="./docs/figs/icons/perception.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Perception</span> (<span style="color: rgb(192, 0, 0);">Corr.</span>)</th>
+<th><img src="./docs/figs/icons/perception.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Perception</span> (<span style="color: rgb(66, 133, 244);">T.O.</span>)</th>
+<th><img src="./docs/figs/icons/prediction.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Prediction</span> (<span style="color: rgb(0, 176, 80);">Clean</span>)</th>
+<th><img src="./docs/figs/icons/prediction.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Prediction</span> (<span style="color: rgb(192, 0, 0);">Corr.</span>)</th>
+<th><img src="./docs/figs/icons/prediction.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Prediction</span> (<span style="color: rgb(66, 133, 244);">T.O.</span>)</th>
+<th><img src="./docs/figs/icons/planning.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Planning</span> (<span style="color: rgb(0, 176, 80);">Clean</span>)</th>
+<th><img src="./docs/figs/icons/planning.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Planning</span> (<span style="color: rgb(192, 0, 0);">Corr.</span>)</th>
+<th><img src="./docs/figs/icons/planning.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Planning</span> (<span style="color: rgb(66, 133, 244);">T.O.</span>)</th>
+<th><img src="./docs/figs/icons/behavior.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Behavior</span> (<span style="color: rgb(0, 176, 80);">Clean</span>)</th>
+<th><img src="./docs/figs/icons/behavior.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Behavior</span> (<span style="color: rgb(192, 0, 0);">Corr.</span>)</th>
+<th><img src="./docs/figs/icons/behavior.png" style="width: 37px; height: 37px; vertical-align: top;"><span>Behavior</span> (<span style="color: rgb(66, 133, 244);">T.O.</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td><span style="color: rgb(0, 176, 80);"><b>Human</b></span></td>
+<td>-</td>
+<td>-</td>
+<td><span style="color: rgb(0, 176, 80);">47.67</span></td>
+<td><span style="color: rgb(0, 176, 80);">38.32</span></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td><span style="color: rgb(0, 176, 80);">69.51</span></td>
+<td><span style="color: rgb(0, 176, 80);">54.09</span></td>
+<td>-</td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td><a>GPT-4o</a></td>
+<td>-</td>
+<td>Commercial</td>
+<td>35.37</td>
+<td>35.25</td>
+<td>36.48</td>
+<td>51.30</td>
+<td>49.94</td>
+<td>49.05</td>
+<td>75.75</td>
+<td>75.36</td>
+<td>73.21</td>
+<td>45.40</td>
+<td>44.33</td>
+<td>50.03</td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td><a>LLaVA-1.5</a></td>
+<td>7B</td>
+<td>Open</td>
+<td>23.22</td>
+<td>22.95</td>
+<td>22.31</td>
+<td>22.02</td>
+<td>17.54</td>
+<td>14.64</td>
+<td>29.15</td>
+<td>31.51</td>
+<td>32.45</td>
+<td>13.60</td>
+<td>13.62</td>
+<td>14.91</td>
+</tr>
+<tr>
+<td><a>LLaVA-1.5</a></td>
+<td>13B</td>
+<td>Open</td>
+<td>23.35</td>
+<td>23.37</td>
+<td>22.37</td>
+<td>36.98</td>
+<td>37.78</td>
+<td>23.98</td>
+<td>34.26</td>
+<td>34.99</td>
+<td>38.85</td>
+<td>32.99</td>
+<td>32.43</td>
+<td>32.79</td>
+</tr>
+<tr>
+<td><a>LLaVA-NeXT</a></td>
+<td>7B</td>
+<td>Open</td>
+<td>24.15</td>
+<td>19.62</td>
+<td>13.86</td>
+<td>35.07</td>
+<td>35.89</td>
+<td>28.36</td>
+<td>45.27</td>
+<td>44.36</td>
+<td>27.58</td>
+<td>48.16</td>
+<td>39.44</td>
+<td>11.92</td>
+</tr>
+<tr>
+<td><a>InternVL2</a></td>
+<td>8B</td>
+<td>Open</td>
+<td>32.36</td>
+<td>32.68</td>
+<td>33.60</td>
+<td>45.52</td>
+<td>37.93</td>
+<td>48.89</td>
+<td>53.27</td>
+<td>55.25</td>
+<td>34.56</td>
+<td>54.58</td>
+<td>40.78</td>
+<td>20.14</td>
+</tr>
+<tr>
+<td><a>Phi-3</a></td>
+<td>4.2B</td>
+<td>Open</td>
+<td>22.88</td>
+<td>23.93</td>
+<td>28.26</td>
+<td>40.11</td>
+<td>37.27</td>
+<td>22.61</td>
+<td>60.03</td>
+<td>61.31</td>
+<td>46.88</td>
+<td>45.20</td>
+<td>44.57</td>
+<td>28.22</td>
+</tr>
+<tr>
+<td><a>Phi-3.5</a></td>
+<td>4.2B</td>
+<td>Open</td>
+<td>27.52</td>
+<td>27.51</td>
+<td>28.26</td>
+<td>45.13</td>
+<td>38.21</td>
+<td>4.92</td>
+<td>31.91</td>
+<td>28.36</td>
+<td>46.30</td>
+<td>37.89</td>
+<td>49.13</td>
+<td>39.16</td>
+</tr>
+<tr>
+<td><a>Oryx</a></td>
+<td>7B</td>
+<td>Open</td>
+<td>17.02</td>
+<td>15.97</td>
+<td>18.47</td>
+<td>48.13</td>
+<td>46.63</td>
+<td>12.77</td>
+<td>53.57</td>
+<td>55.76</td>
+<td>48.26</td>
+<td>33.92</td>
+<td>33.81</td>
+<td>23.94</td>
+</tr>
+<tr>
+<td><a>Qwen2-VL</a></td>
+<td>7B</td>
+<td>Open</td>
+<td>28.99</td>
+<td>27.85</td>
+<td>35.16</td>
+<td>37.89</td>
+<td>39.55</td>
+<td>37.77</td>
+<td>57.04</td>
+<td>54.78</td>
+<td>41.66</td>
+<td>49.07</td>
+<td>47.68</td>
+<td>54.48</td>
+</tr>
+<tr>
+<td><a>Qwen2-VL</a></td>
+<td>72B</td>
+<td>Open</td>
+<td>30.13</td>
+<td>26.92</td>
+<td>17.70</td>
+<td>49.35</td>
+<td>43.49</td>
+<td>5.57</td>
+<td>61.30</td>
+<td>63.07</td>
+<td>53.35</td>
+<td>51.26</td>
+<td>49.78</td>
+<td>39.46</td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td><a>DriveLM</a></td>
+<td>7B</td>
+<td>Specialist</td>
+<td>16.85</td>
+<td>16.00</td>
+<td>8.75</td>
+<td>44.33</td>
+<td>39.71</td>
+<td>4.70</td>
+<td>68.71</td>
+<td>67.60</td>
+<td>65.24</td>
+<td>42.78</td>
+<td>40.37</td>
+<td>27.83</td>
+</tr>
+<tr>
+<td><a>Dolphins</a></td>
+<td>7B</td>
+<td>Specialist</td>
+<td>9.59</td>
+<td>10.84</td>
+<td>11.01</td>
+<td>32.66</td>
+<td>29.88</td>
+<td>39.98</td>
+<td>52.91</td>
+<td>53.77</td>
+<td>60.98</td>
+<td>8.81</td>
+<td>8.25</td>
+<td>11.92</td>
+</tr>
+</tbody>
+</table>
+          
 
 
 ## Citation
