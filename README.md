@@ -253,7 +253,7 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](./docs
 
 # :aerial_tramway: Benchmark Results
 
-### Benchmark Configuration
+## Benchmark Configuration
 
 <details open>
 <summary>&nbsp<b>Commercial VLMs</b></summary>
@@ -284,7 +284,7 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](./docs
 </details>
 
 
-### Benchmark Study
+## Benchmark Study
 
 <table>
 <thead>
@@ -544,7 +544,7 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](./docs
 </table>
           
 
-### Robustness Analysis
+## Robustness Analysis
 <table>
 <thead>
 <tr>
@@ -828,6 +828,17 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](./docs
 </tbody>
 </table>
 
+
+## Qualitative Comparisons
+
+| ![example](./docs/figs/examples_benchmark_3.png) |
+|:-:|
+| Examples of different VLM responses under the Frame Lost condition. We observe that GPT-4o responses with visible objects while LLaVA-NeXT and DriveLM tend to hallucinate objects that cannot be seen from the provided images.
+
+
+| ![example](./docs/figs/examples_benchmark_4.png) |
+|:-:|
+| Examples of different VLM responses under the Water Splash condition. We observe that, under severe visual corruptions, VLMs respond with ambiguous and general answers based on their learned knowledge, without referring to the visual information. Most responses include traffic signals and pedestrians, even though they are not visible in the provided images.
 
 
 
