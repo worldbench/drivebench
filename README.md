@@ -28,16 +28,16 @@
 <p align="center">
   <a href="" target='_blank'>
     <img src="https://img.shields.io/badge/Paper-%F0%9F%93%83-lightblue">
-  </a>
+  </a>&nbsp;
   <a href="https://drive-bench.github.io/" target='_blank'>
     <img src="https://img.shields.io/badge/Project-%F0%9F%94%97-blue">
-  </a>
+  </a>&nbsp;
   <a href="https://huggingface.co/datasets/drive-bench/arena" target='_blank'>
     <img src="https://img.shields.io/badge/Dataset-%F0%9F%8E%AC-pink">
-  </a>
-  <a href="" target='_blank'>
+  </a>&nbsp;
+  <a >
     <img src="https://img.shields.io/badge/%E4%B8%AD%E8%AF%91%E7%89%88-%F0%9F%90%BC-red">
-  </a>
+  </a>&nbsp;
   <a href="https://hits.seeyoufarm.com">
     <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdrive-bench%2Ftoolkit&count_bg=%2300B48B&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false"/>
   </a>
@@ -46,21 +46,25 @@
 
 ## About
 
-Vision-Language Models (VLMs) are gaining traction in autonomous driving for their potential to provide interpretable decisions via natural language. However, their reliability and visual grounding remain unexamined. We introduce **DriveBench**, a benchmark to evaluate VLMs across 17 settings, 12 models, and 5 tasks. Our study shows VLMs often generate plausible but unreliable responses, especially with degraded inputs. We propose improved metrics and highlight the need for better dataset and metric designs to ensure trustworthy decision-making in autonomous driving.
+| ![drivebench](./docs/figs/bench.png) |
+|:-|
+| - We introduce :blue_car: **DriveBench**, a benchmark dataset designed to evaluate VLM reliability across **17 settings** (clean, corrupted, and text-only inputs), encompassing **19,200 frames**, **20,498 question-answer pairs**, **three question types**, **four mainstream driving tasks**, and **a total of 12 popular VLMs**. 
+| - Our findings reveal that VLMs often generate plausible responses derived from general knowledge or textual cues rather than true visual grounding, especially under degraded or missing visual inputs. This behavior, concealed by dataset imbalances and insufficient evaluation metrics, poses significant risks in safety-critical scenarios like autonomous driving. 
+| - We further observe that VLMs struggle with multi-modal reasoning and display heightened sensitivity to input corruptions, leading to inconsistencies in performance. To address these challenges, we propose refined evaluation metrics that prioritize robust visual grounding and multi-modal understanding. Additionally, we highlight the potential of leveraging VLMs’ awareness of corruptions to enhance their reliability, offering a roadmap for developing more trustworthy and interpretable decision-making systems in real-world autonomous driving contexts. 
 
 
-## Updates
 
-- [2025/01/01]: Launch of the :blue_car: **DriveBench** project! Check out more details in our [technical report](). :rocket:
+## :memo: Updates
+- \[2025.01\] The evaluation data can be accessible at our [HuggingFace Dataset Card](https://huggingface.co/datasets/drive-bench/arena). :hugs:
+- \[2025.01\] Introducing the :blue_car: **DriveBench** project! For more details, kindly refer to our [Project Page](https://drive-bench.github.io/) and [Preprint](). :rocket:
 
 
-## Outline
-
-- [About](#about)
+# Table of Content
 - [Installation](#gear-installation)
+- [Benchmark Comparison](#bar_chart-benchmark-comparison)
 - [Data Preparation](#hotsprings-data-preparation)
 - [Getting Started](#rocket-getting-started)
-- [Benchmark](#bar_chart-benchmark)
+- [Benchmark Results](#aerial_tramway-benchmark-results)
 - [Citation](#citation)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
@@ -69,6 +73,167 @@ Vision-Language Models (VLMs) are gaining traction in autonomous driving for the
 ## :gear: Installation
 
 Will be updated soon.
+
+
+## :bar_chart: Benchmark Comparison
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Benchmark</th>
+    <th rowspan="2"><img src="./docs/figs/icons/perception.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Perception</span></th>
+    <th rowspan="2"><img src="./docs/figs/icons/prediction.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Prediction</span></th>
+    <th rowspan="2"><img src="./docs/figs/icons/behavior.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Behavior</span></th>
+    <th rowspan="2"><img src="./docs/figs/icons/planning.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Planning</span></th>
+    <th rowspan="2"><img src="./docs/figs/icons/robustness.png" style="width: 40px; height: 40px; vertical-align: top;"><span>Robustness</span></th>
+    <th>Frames</th>
+    <th>QA</th>
+    <th rowspan="2">Logic</th>
+    <th rowspan="2">Evaluation Metrics</th>
+  </tr>
+  <tr>
+    <th>(Test)</th>
+    <th>(Test)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td>BDD-X</td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td>-</td>
+    <td>-</td>
+    <td>None</td>
+    <td>Language</td>
+  </tr>
+  <tr>
+    <td>BDD-OIA</td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td>-</td>
+    <td>-</td>
+    <td>None</td>
+    <td>F1 Score</td>
+  </tr>
+  <tr>
+    <td>nuScenes-QA</td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td>36,114</td>
+    <td>83,337</td>
+    <td>None</td>
+    <td>Acc</td>
+  </tr>
+  <tr>
+    <td>Talk2Car</td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td>~1.8k</td>
+    <td>2,447</td>
+    <td>None</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>nuPrompt</td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td>~36k</td>
+    <td>~6k</td>
+    <td>None</td>
+    <td>AMOTA</td>
+  </tr>
+  <tr>
+    <td>DRAMA</td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td>-</td>
+    <td>~14k</td>
+    <td>Chain</td>
+    <td>Language</td>
+  </tr>
+  <tr>
+    <td>Rank2Tel</td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td>-</td>
+    <td>-</td>
+    <td>Chain</td>
+    <td>Accuracy, Language</td>
+  </tr>
+  <tr>
+    <td>DirveMLLM</td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td>880</td>
+    <td>-</td>
+    <td>None</td>
+    <td>Acc</td>
+  </tr>
+  <tr>
+    <td>DriveVLM</td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td>-</td>
+    <td>-</td>
+    <td>None</td>
+    <td>GPT<sub>ctx</sub></td>
+  </tr>
+  <tr>
+    <td>DriveLM</td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(192, 0, 0);">✘</span></td>
+    <td>4,794</td>
+    <td>15,480</td>
+    <td>Graph</td>
+    <td>Language, GPT</td>
+  </tr>
+  <tr>
+    <td><strong><span style="font-family: 'Nunito', sans-serif; color: rgb(66, 133, 244);">Drive</span><span style="font-family: 'Nunito', sans-serif; color: rgb(192, 0, 0);">Bench</span> (Ours)</strong></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><span style="color: rgb(0, 176, 80);">✔</span></td>
+    <td><b>19,200</b></td>
+    <td><b>20,498</b></td>
+    <td><b>Graph</b></td>
+    <td><b>Acc, Language, GPT, GPT<sub>ctx</sub></b></td>
+  </tr>
+</tbody>     
+</table>
 
 
 ## :hotsprings: Data Preparation
@@ -81,7 +246,9 @@ Will be updated soon.
 Will be updated soon.
 
 
-## :bar_chart: Benchmark
+## :aerial_tramway: Benchmark Results
+
+### 
 
 | **Model**                          | **Size**       | **Type**       | **Perception (Clean)** | **Perception (Corr.)** | **Perception (T.O.)** | **Prediction (Clean)** | **Prediction (Corr.)** | **Prediction (T.O.)** | **Planning (Clean)** | **Planning (Corr.)** | **Planning (T.O.)** | **Behavior (Clean)** | **Behavior (Corr.)** | **Behavior (T.O.)** |
 |:-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -104,7 +271,12 @@ Will be updated soon.
 ## Citation
 If you find this work helpful, please kindly consider citing our paper:
 ```bibtex
-
+@article{xie2025drivebench,
+  author  = {Xie, Shaoyuan and Kong, Lingdong and Dong, Yuhao and Sima, Chonghao and Zhang, Wenwei and Chen, Qi Alfred and Liu, Ziwei and Pan, Liang},
+  title   = {Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives},
+  journal = {arXiv preprint arXiv:2501.},
+  year    = {2025},
+}
 ```
 
 
