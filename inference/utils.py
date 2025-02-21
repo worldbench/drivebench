@@ -1,4 +1,6 @@
+import os
 import re
+import json
 from typing import List
 
 
@@ -67,3 +69,28 @@ def replace_system_prompt(prompt: str, image_paths: List[str]) -> str:
         print("Warning: Original sentence not found in the prompt. No replacement made.")
 
     return updated_prompt
+
+
+def load_json_files(input_folder):
+    """
+    Load JSON data from all files in a directory
+    """
+    data = []
+    for file_name in os.listdir(input_folder):
+        if file_name.endswith(".json"):
+            with open(os.path.join(input_folder, file_name), 'r') as f:
+                for line in f:
+                    try:
+                        line_data = json.loads(line.strip())
+                        data.append(line_data)
+                    except json.JSONDecodeError as e:
+                        print(f"Skipping line in {file_name} due to error: {e}")
+    return data
+
+
+def save_json(data, output_file):
+    """
+    Save JSON data to a file.
+    """
+    with open(output_file, 'w') as f:
+        json.dump(data, f, indent=4)

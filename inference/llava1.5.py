@@ -18,7 +18,7 @@ import ray
 from ray.util.scheduling_strategies import PlacementGroupSchedulingStrategy
 from vllm import LLM, SamplingParams
 
-from inference.utils import replace_system_prompt
+from inference.utils import replace_system_prompt, load_json_files, save_json
 
 
 assert Version(ray.__version__) >= Version("2.22.0"), "Ray version must be at least 2.22.0"
@@ -192,6 +192,12 @@ def main():
         
     ds.write_json(args.output)
 
+    # Save the results into a JSON file
+    res = load_json_files(args.output)
+    save_json(res, args.output + ".json")
+    # remove the temporary folder
+    os.system(f"rm -r {args.output}")
+    
 
 if __name__ == '__main__':
     main()
