@@ -6,7 +6,7 @@ Run the following command to perform inference of LLaVA:
 
 ```bash
 . env.sh
-bash script/llava1.5-7b.sh
+bash script/llava1.5-7b.sh <gpu_num>
 ```
 
 The results will be saved into json files. The inference script for more models will be added soon.
