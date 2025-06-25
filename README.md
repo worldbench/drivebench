@@ -53,6 +53,8 @@
 
 
 ## :memo: Updates
+- \[2025.06\] - Our paper has been accepted to **ICCV 2025**! :tada:
+- \[2025.04\] - We are hosting the **RoboSense 2025 Competition**! :checkered_flag: Visit the [competition homepage](https://robosense2025.github.io/) for details and participation.
 - \[2025.01\] - The evaluation data can be accessible at our [HuggingFace Dataset Card](https://huggingface.co/datasets/drive-bench/arena). :hugs:
 - \[2025.01\] - Introducing the :blue_car: **DriveBench** project! For more details, kindly refer to our [Project Page](https://drive-bench.github.io/) and [Preprint](https://arxiv.org/abs/2501.04003). :rocket:
 
