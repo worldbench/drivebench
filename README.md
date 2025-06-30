@@ -38,8 +38,8 @@
   <a >
     <img src="https://img.shields.io/badge/%E4%B8%AD%E8%AF%91%E7%89%88-%F0%9F%90%BC-red">
   </a>&nbsp;
-  <a href="https://hits.seeyoufarm.com">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdrive-bench%2Ftoolkit&count_bg=%2300B48B&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false"/>
+  <a href="https://github.com/drive-bench/toolkit" target="_blank">
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=drive-bench.toolkit&left_color=gray&right_color=red" alt="visitor badge">
   </a>
 </p>
 
