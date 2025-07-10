@@ -71,7 +71,7 @@ PERCEPTION_VQA_PROMPT = """Please evaluate the predicted answer on a scale from 
 - Evaluate the grammatical accuracy and structure of the answer. Assign up to 5 points for clarity and logical flow, and up to 5 points for grammatical accuracy.
 - Guideline: Deduct points for grammar or syntax issues that reduce readability or coherence.
 
-Here is the multiple-choice question: "{QUESTION}"
+Here is the question: "{QUESTION}"
 
 Here is the predicted answer: "{PRED}"
 
