@@ -17,10 +17,10 @@
       <a href="https://liuziwei7.github.io/" target='_blank'>Ziwei Liu</a><sup>4</sup>&nbsp;&nbsp;&nbsp;&nbsp;
       <a href="https://scholar.google.com/citations?user=lSDISOcAAAAJJ&hl=en" target='_blank'>Liang Pan</a><sup>2</sup>
     </br></br>
-  <sup>1</sup>UC, Irvine&nbsp;&nbsp;&nbsp;&nbsp;
-  <sup>2</sup>Shanghai AI Laboratory&nbsp;&nbsp;&nbsp;&nbsp;
-  <sup>3</sup>NUS&nbsp;&nbsp;&nbsp;&nbsp;
-  <sup>4</sup>NTU&nbsp;&nbsp;&nbsp;&nbsp;
+  <sup>1</sup>UC, Irvine&nbsp;&nbsp;&nbsp;
+  <sup>2</sup>Shanghai AI Laboratory&nbsp;&nbsp;&nbsp;
+  <sup>3</sup>NUS&nbsp;&nbsp;&nbsp;
+  <sup>4</sup>NTU&nbsp;&nbsp;&nbsp;
   <sup>5</sup>HKU
   </p>
 </p>
@@ -28,16 +28,16 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2501.04003" target='_blank'>
     <img src="https://img.shields.io/badge/Paper-%F0%9F%93%83-lightblue">
-  </a>&nbsp;
+  </a>
   <a href="https://drive-bench.github.io/" target='_blank'>
     <img src="https://img.shields.io/badge/Project-%F0%9F%94%97-blue">
-  </a>&nbsp;
+  </a>
   <a href="https://huggingface.co/datasets/drive-bench/arena" target='_blank'>
     <img src="https://img.shields.io/badge/Dataset-%F0%9F%8E%AC-pink">
-  </a>&nbsp;
+  </a>
   <a >
     <img src="https://img.shields.io/badge/%E4%B8%AD%E8%AF%91%E7%89%88-%F0%9F%90%BC-red">
-  </a>&nbsp;
+  </a>
   <a href="https://github.com/drive-bench/toolkit" target="_blank">
     <img src="https://visitor-badge.laobi.icu/badge?page_id=drive-bench.toolkit&left_color=gray&right_color=red" alt="visitor badge">
   </a>
