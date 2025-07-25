@@ -2,10 +2,10 @@
 
 
 <p align="center">
-  <h3 align="center">  
+  <h2 align="center">  
     <img src="docs/figs/icons/human.png" align="center" width="5%">
     <strong>Are VLMs Ready for Autonomous Driving?<br>An Empirical Study from the Reliability, Data, and Metric Perspectives</strong>
-  </h3>
+  </h2>
 
   <p align="center">
       <a href="https://daniel-xsy.github.io/" target='_blank'>Shaoyuan Xie</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -17,11 +17,11 @@
       <a href="https://liuziwei7.github.io/" target='_blank'>Ziwei Liu</a><sup>4</sup>&nbsp;&nbsp;&nbsp;&nbsp;
       <a href="https://scholar.google.com/citations?user=lSDISOcAAAAJJ&hl=en" target='_blank'>Liang Pan</a><sup>2</sup>
     </br></br>
-  <sup>1</sup>University of California, Irvine&nbsp;&nbsp;&nbsp;&nbsp;
+  <sup>1</sup>UC, Irvine&nbsp;&nbsp;&nbsp;&nbsp;
   <sup>2</sup>Shanghai AI Laboratory&nbsp;&nbsp;&nbsp;&nbsp;
-  <sup>3</sup>National University of Singapore&nbsp;&nbsp;&nbsp;&nbsp;
-  <sup>4</sup>S-Lab, Nanyang Technological University&nbsp;&nbsp;&nbsp;&nbsp;
-  <sup>5</sup>The University of Hong Kong
+  <sup>3</sup>NUS&nbsp;&nbsp;&nbsp;&nbsp;
+  <sup>4</sup>NTU&nbsp;&nbsp;&nbsp;&nbsp;
+  <sup>5</sup>HKU
   </p>
 </p>
 
@@ -48,18 +48,32 @@
 
 | ![drivebench](./docs/figs/bench.png) |
 |:-:|
-| We introduce :blue_car: **DriveBench**, a benchmark dataset designed to evaluate VLM reliability across **17 settings** (clean, corrupted, and text-only inputs), encompassing **19,200 frames**, **20,498 question-answer pairs**, **three question types**, **four mainstream driving tasks**, and **a total of 12 popular VLMs**. 
-| Our findings reveal that VLMs often generate plausible responses derived from general knowledge or textual cues rather than true visual grounding, especially under degraded or missing visual inputs. This behavior, concealed by dataset imbalances and insufficient evaluation metrics, poses significant risks in safety-critical scenarios like autonomous driving. 
+
+- This work introduces :blue_car: **DriveBench**, a benchmark dataset designed to evaluate VLM reliability across **17 settings** (clean, corrupted, and text-only inputs), encompassing **19,200 frames**, **20,498 question-answer pairs**, **three question types**, **four mainstream driving tasks**, and **a total of 12 popular VLMs**. 
+- Our findings reveal that VLMs often generate plausible responses derived from general knowledge or textual cues rather than true visual grounding, especially under degraded or missing visual inputs. This behavior, concealed by **dataset imbalances** and **insufficient evaluation metrics**, poses significant risks in safety-critical scenarios like autonomous driving. 
+
+### :books: Citation
+If you find this work helpful for your research, please kindly consider citing our paper:
+
+```
+@inproceedings{xie2025drivebench,
+  author  = {Xie, Shaoyuan and Kong, Lingdong and Dong, Yuhao and Sima, Chonghao and Zhang, Wenwei and Chen, Qi Alfred and Liu, Ziwei and Pan, Liang},
+  title   = {Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives},
+  journal = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year    = {2025},
+}
+```
+
 
 
 ## :memo: Updates
 - \[2025.06\] - Our paper has been accepted to **ICCV 2025**! :tada:
 - \[2025.04\] - We are hosting the **RoboSense 2025 Competition**! :checkered_flag: Visit the [competition homepage](https://robosense2025.github.io/) for details and participation.
-- \[2025.01\] - The evaluation data can be accessible at our [HuggingFace Dataset Card](https://huggingface.co/datasets/drive-bench/arena). :hugs:
+- \[2025.01\] - The evaluation data can be accessed at our [HuggingFace Dataset Card](https://huggingface.co/datasets/drive-bench/arena). :hugs:
 - \[2025.01\] - Introducing the :blue_car: **DriveBench** project! For more details, kindly refer to our [Project Page](https://drive-bench.github.io/) and [Preprint](https://arxiv.org/abs/2501.04003). :rocket:
 
 
-# Table of Content
+# Table of Contents
 - [Benchmark Comparison](#bar_chart-benchmark-comparison)
 - [Installation](#gear-installation)
 - [Data Preparation](#hotsprings-data-preparation)
@@ -68,7 +82,6 @@
   - [Benchmark Configuration](#benchmark-configuration)
   - [Benchmark Study](#benchmark-study)
   - [Robustness Analysis](#robustness-analysis)
-- [Citation](#citation)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
@@ -841,19 +854,6 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](./docs
 | ![example](./docs/figs/examples_benchmark_4.png) |
 |:-:|
 | Examples of different VLM responses under the Water Splash condition. We observe that, under severe visual corruptions, VLMs respond with ambiguous and general answers based on their learned knowledge, without referring to the visual information. Most responses include traffic signals and pedestrians, even though they are not visible in the provided images.
-
-
-
-# Citation
-If you find this work helpful, please kindly consider citing our paper:
-```bibtex
-@article{xie2025drivebench,
-  author  = {Xie, Shaoyuan and Kong, Lingdong and Dong, Yuhao and Sima, Chonghao and Zhang, Wenwei and Chen, Qi Alfred and Liu, Ziwei and Pan, Liang},
-  title   = {Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives},
-  journal = {arXiv preprint arXiv:2501.04003},
-  year    = {2025},
-}
-```
 
 
 # License
