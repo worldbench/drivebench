@@ -3,7 +3,7 @@
 
 <p align="center">
   <h2 align="center">  
-    <img src="docs/figs/icons/human.png" align="center" width="5%">
+    <img src="docs/figs/icons/human.png" align="bottom" width="5%">
     <strong>Are VLMs Ready for Autonomous Driving?<br>An Empirical Study from the Reliability, Data, and Metric Perspectives</strong>
   </h2>
 
