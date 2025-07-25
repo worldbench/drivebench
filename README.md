@@ -65,10 +65,10 @@ If you find this work helpful for your research, please kindly consider citing o
 ```
 
 
-
 ## :memo: Updates
-- \[2025.06\] - Our paper has been accepted to **ICCV 2025**! :tada:
-- \[2025.04\] - We are hosting the **RoboSense 2025 Competition**! :checkered_flag: Visit the [competition homepage](https://robosense2025.github.io/) for details and participation.
+- \[2025.07\] - The **DriveBench** dataset has been extended to **Track 1: Driving with Language** of the [RoboSense Challenge](https://robosense2025.github.io/) at [IROS 2025](https://www.iros25.org/). See the [track homepage](https://robosense2025.github.io/track1) and [GitHub repo](https://github.com/robosense2025/track1) for more details.
+- \[2025.06\] - Our paper has been accepted to **ICCV 2025**. See you in Honolulu! 🌸
+- \[2025.04\] - We are hosting the 2025 [RoboSense Challenge](https://robosense2025.github.io/)! Visit the [competition homepage](https://robosense2025.github.io/) for details and participation. :checkered_flag:
 - \[2025.01\] - The evaluation data can be accessed at our [HuggingFace Dataset Card](https://huggingface.co/datasets/drive-bench/arena). :hugs:
 - \[2025.01\] - Introducing the :blue_car: **DriveBench** project! For more details, kindly refer to our [Project Page](https://drive-bench.github.io/) and [Preprint](https://arxiv.org/abs/2501.04003). :rocket:
 
