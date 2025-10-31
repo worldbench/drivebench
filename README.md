@@ -55,11 +55,13 @@
 If you find this work helpful for your research, please kindly consider citing our paper:
 
 ```
-@inproceedings{xie2025drivebench,
-  author  = {Xie, Shaoyuan and Kong, Lingdong and Dong, Yuhao and Sima, Chonghao and Zhang, Wenwei and Chen, Qi Alfred and Liu, Ziwei and Pan, Liang},
-  title   = {Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives},
-  journal = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  year    = {2025},
+@InProceedings{xie2025drivebench,
+    author    = {Xie, Shaoyuan and Kong, Lingdong and Dong, Yuhao and Sima, Chonghao and Zhang, Wenwei and Chen, Qi Alfred and Liu, Ziwei and Pan, Liang},
+    title     = {Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data and Metric Perspectives},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {6585-6597}
 }
 ```
 
