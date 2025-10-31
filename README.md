@@ -25,7 +25,7 @@
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2501.04003" target='_blank'>
+  <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Xie_Are_VLMs_Ready_for_Autonomous_Driving_An_Empirical_Study_from_ICCV_2025_paper.html" target='_blank'>
     <img src="https://img.shields.io/badge/Paper-%F0%9F%93%83-lightblue">
   </a>
   <a href="https://drive-bench.github.io/" target='_blank'>
